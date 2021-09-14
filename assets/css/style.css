@@ -1,12 +1,18 @@
 body{
-  box-sizing: border-box;
-  font-size: 15px;
-  }
-.list{
-  display: inline-block;
+  background-color: burlywood;
 }
-
-p{
-  text-align: center;
-  border: 5px;
+form{
+  display: flex;
+  max-width: 300px;
+  min-height: 150px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
+input:focus{
+  outline-color: blue;
+}
+label{
+  display: flex;
+  flex-direction: column;
 }
