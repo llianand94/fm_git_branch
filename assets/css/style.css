@@ -4,7 +4,7 @@ body{
 form{
   display: flex;
   max-width: 300px;
-  min-height: 150px;
+  min-height: 250px;
   margin: auto;
   flex-direction: column;
   justify-content: space-around;
@@ -15,4 +15,7 @@ input:focus{
 label{
   display: flex;
   flex-direction: column;
+}
+.btn-block{
+  text-align: center;
 }
