@@ -1,5 +1,5 @@
 body{
-  background-color: burlywood;
+  background-color: azure;
 }
 .users-cards{
 display: flex;
@@ -28,4 +28,17 @@ display: flex;
   margin: auto;
   
   
+}
+.content h1{
+  column-span: all;
+  text-align: center;
+}
+.content{
+  max-width: 1000px;
+  min-height: 80vh;
+  margin: auto;
+  columns:3 200px;
+  column-rule: rgb(116, 240, 188) dotted;
+  column-gap: 2em;
+  text-align: justify;
 }
