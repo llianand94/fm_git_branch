@@ -1,115 +1,136 @@
-:root{
-  --text-color: rgb(99, 99, 99);
-  --link-color: rgb(62, 168, 103);
-}
-*{
-  box-sizing: border-box;
-}
-body{
-  background-color: rgb(128, 128, 128);
-  color: var(--text-color);
-  font-size: 16px;
+:root {
+    --form-color: rgb(199, 198, 198);
+    --text-color: rgb(99, 99, 99);
+    --link-color: rgb(62, 168, 103);
+    --dark-color:rgb(128, 128, 128);
 }
 
-.wrapper{
-  min-height: 200vh;
-  width: 100%;
-  padding: 30px 0;
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.register{
-  display: flex;
-  /* 100% берет ширину родителя и не считает бордеры */
-  width: 100%;
-  max-width: 500px;
-  min-height: 400px;
-  padding: 30px 20px;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgb(199, 198, 198);
+body {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+    font-size: 16px;
 }
 
-.register-form{
-  display: flex;  
-  flex-direction: column; 
-  justify-content: space-between;
-  align-items: stretch;
+.wrapper {   
+    min-height: 200vh;    
+    padding: 30px 0;
+    
 }
 
-.header{  
-  text-align: center;
-  
-  
+.register {
+    display: flex;
+    /* 100% берет ширину родителя и не считает бордеры */
+    min-width: 200px;
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--form-color);
 }
-.header h1{
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  width: 100px;
-  color: rgb(49, 49, 49); 
-  font-size: 1.6em;
-  
-}
-.header span{
-  
-  background-color: rgb(199, 198, 198);
-  z-index: 1;
-}
-/* задать ширину */
 
-.header h1::before{
-  content: "";
-position: absolute;
-width: 100%;
-left: -120%;
-height: 2px;
-background-color: rgb(105, 29, 29);
-top: 50%;
-z-index: 0;
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
 
+.header h1 {
+    display: inline-block;
+    position: relative;    
+    margin: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.6em;
 }
-.name-wrapper{
-  display: flex;  
-  justify-content: space-between; 
+
+.header span {
+    display: inline-block;
+    position: relative;    
+    max-width: 22%;
+    min-width: 150px;
+    padding: 0 20px;
+    background-color: var(--form-color);
+    
 }
-.name-wrapper input{
-  width: 48%;
+
+.header h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0%;
+    height: 2px;
+    background-color: var(--dark-color);
+        
 }
-.accept{
-  padding: 10px 0;
-  text-align: left;
+
+.name-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
-.btn{
-  padding: 10px;
-  border: 1px solid grey ;
-  border-radius: 4px;
-  background-color: var(--link-color);
-  text-transform: capitalize;
-  cursor: pointer;
+
+.name-wrapper input {
+    width: 48%;
 }
-.text-owerflow{
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+
+.accept {
+    padding: 10px 0;
+    text-align: left;
 }
-.white{
-  color:white
+
+button.btn {
+    padding: 10px ;
+    border: 1px solid var(--dark-color);
+    border-radius: 4px;
+    background-color: var(--link-color);
+    cursor: pointer;
 }
-.capitalize{
-  text-transform: capitalize;
+.btn p{
+    width: 100px;
+    padding: 0;
+    margin: auto;
+ 
 }
-input{
-  margin: 7px 0;
-  padding: 10px;
-  border: 1px solid grey ;
-  border-radius: 4px;
+
+input {
+    margin: 7px 0;
+    padding: 10px;
+    border: 1px solid var(--dark-color);
+    border-radius: 4px;
 }
-input::placeholder{
-  text-transform: capitalize;
+
+input::placeholder {
+    text-transform: capitalize;
 }
-a:not(p>a){
-  text-decoration: none;
-  color: var(--link-color);
+
+a:not(p>a) {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/* specific classes */
+.text-center{
+    text-align: center
+}
+.text-owerflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.white {
+    color: white
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
