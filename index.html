@@ -8,137 +8,35 @@
   <title>Document</title>
 </head>
 
-
-  <div class="wrapper">
-  <section class="header">
-    <!-- добавить афтер бефор полосу -->
-    <article>
-      <h1>Register</h1>
-      <p>Create tour account. It's free and only takes a minute</p>
-    </article>    
-  </section>
-
-  <form action="./file" method="get">
+<div class="wrapper">
+  <section class="register">
+    
+      <!-- добавить афтер бефор полосу -->
+      <article class="header">
+        <h1 class="capitalize "><span class="text-owerflow">register</span></h1>
+        <p>Create tour account. It's free and only takes a minute</p>
+      </article>    
+    
+    <form class="register-form" reaction="./file" method="get">
       <div class="name-wrapper">
-          <label><input  autofocus type="text" placeholder="First name" name="firstName">
-        </label>
-        <label><input  type="text" placeholder="Last name" name="lastName">
-        </label>
-    </div>
-    <input   type="email" placeholder="Email" name="">
-    
-    <input  type="password" placeholder="Password" name="pass">
-    <input  type="password" placeholder="Confirm password" name="passConf">
-    
-    <label>
+            <input  autofocus type="text" placeholder="first name" name="firstName">          
+            <input  type="text" placeholder="last name" name="lastName">          
+      </div>
+      <input  type="email"    placeholder="email" name="">      
+      <input  type="password" placeholder="password" name="pass">
+      <input  type="password" placeholder="confirm password" name="passConf">
       
-      <input  type="checkbox"  name="lastName"><span> <a href=""></a>I accept the Terms of Use</a> & <a href="">Privacy Policy</a></span> 
-    </label>
-    <button class="btn" type="submit">register now</button>
-  </form>
+      <label class="accept">
+        <input  type="checkbox"  name="accept" required> I accept the 
+        <a class="capitalize" href="">terms of use</a> & 
+        <a class="capitalize" href="">privacy policy</a> 
+      </label>
+      <button class="btn capitalize white text-owerflow" type="submit">register now</button>
+    </form>
 
+  </section>
+  <p class="white">Already have an account? <a class="white" href="#">Sing in</a></p>
 </div>
-<a href="#"></a>
-
-
-
-
-
-
-
-
-
-<!-- <form action="/test" method="GET">
-<fieldset>
-  <legend>user name</legend>
-  <label><span>User name</span><input  
-    autofocus
-    type="text"
-    placeholder="User name"
-    name="firstName"
-    >
-  </label>
-  <label><span>Last name</span><input  
-    type="text"
-    placeholder="Last name"
-    name="lastName"
-    >
-  </label>
-</fieldset>
-<fieldset>
-  <legend>Personal data</legend>
-  <label><span>Post name</span><input  
-    type="email"
-    placeholder="Email adress"
-    name="Email"
-  >
-</label>
-  <label><span>password</span><input type="password"
-    name="" 
-    ></label>
-  <label><span>Male</span>
-    <input type="radio" name="state" 
-    value="male"
-    required>
-  </label>
-  <label><span>Female</span>
-    <input type="radio" name="state" >
-  </label>
-  <label><span>Are you adult?</span>
-    <input value="1" type="checkbox" name="adult" >
-  </label>
-
-   выбор списком -->
-  <!-- <select name="town">
-    <optgroup label="">
-    <option value="1">Zp</option>
-    <option value="2">Kh</option>
-    <option value="3">Dn</option>
-  </optgroup>
-  <optgroup>
-    <option value="1">Zp</option>
-    <option value="2">Kh</option>
-    <option value="3">Dn</option>
-  </optgroup>
-  </select>
-  <label><span>Last name</span><input  
-    type="text"
-    placeholder="Last name"
-    name="lastName"
-    >
-  </label>
-
-  <label><span>town</span>
-    <datalist id="town-list">
-      <option value="1">
-      <option value="2">
-      <option value="3">
-      <option value="4">
-      <option value="5">
-    </datalist>
-    <input  type="text"   placeholder="town"
-    name="town" list="town-list"
-    >
-  </label> --> 
-  <!-- <label><span>HTML</span>
-    <input value="html" type="checkbox" name="course" >
-  </label>
-  <label><span>CSS</span>
-    <input value="css" type="checkbox" name="course" >
-  </label> -->
-
-    <!-- <div class="btn-block">
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit">
-    
-  </div> -->
-   <!-- поле для ввода сообщения -->
-  <!-- <textarea name=""  rows="3"></textarea> -->
-
-<!-- </fieldset> -->
-<!-- второй вариант кнопок -->
-<!-- <button type="submit"><img src="" alt="" srcset="">text</button>
-</form> -->
 
 </body>
 </html>
