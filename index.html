@@ -5,99 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
-</head>
-<form action="/test" method="GET">
-<fieldset>
-  <legend>user name</legend>
-  <label><span>User name</span><input  
-    autofocus
-    type="text"
-    placeholder="User name"
-    name="firstName"
-    >
-  </label>
-  <label><span>Last name</span><input  
-    type="text"
-    placeholder="Last name"
-    name="lastName"
-    >
-  </label>
-</fieldset>
-<fieldset>
-  <legend>Personal data</legend>
-  <label><span>Post name</span><input  
-    type="email"
-    placeholder="Email adress"
-    name="Email"
-  >
-</label>
-  <label><span>password</span><input type="password"
-    name="" 
-    ></label>
-  <label><span>Male</span>
-    <input type="radio" name="state" 
-    value="male"
-    required>
-  </label>
-  <label><span>Female</span>
-    <input type="radio" name="state" >
-  </label>
-  <label><span>Are you adult?</span>
-    <input value="1" type="checkbox" name="adult" >
-  </label>
+  <title>Card user</title>
+</head> 
+<h1>user list</h1>
+<section class="users-cards">
+ 
+  <article class="user-card">
+    <img class="user-photo" src="./assets/img/Max-R_Headshot .jpg" alt="" class="avatar">
+    <div class="user-info">
+      <h2>random name</h2>
+      <div class="btn">
+        <button>allow</button>
+        <button>allow</button>
+      </div>
+    </div>
+  </article>
 
-  <!-- выбор списком -->
-  <select name="town">
-    <optgroup label="">
-    <option value="1">Zp</option>
-    <option value="2">Kh</option>
-    <option value="3">Dn</option>
-  </optgroup>
-  <optgroup>
-    <option value="1">Zp</option>
-    <option value="2">Kh</option>
-    <option value="3">Dn</option>
-  </optgroup>
-  </select>
-  <label><span>Last name</span><input  
-    type="text"
-    placeholder="Last name"
-    name="lastName"
-    >
-  </label>
 
-  <label><span>town</span>
-    <datalist id="town-list">
-      <option value="1">
-      <option value="2">
-      <option value="3">
-      <option value="4">
-      <option value="5">
-    </datalist>
-    <input  type="text"   placeholder="town"
-    name="town" list="town-list"
-    >
-  </label>
-  <!-- <label><span>HTML</span>
-    <input value="html" type="checkbox" name="course" >
-  </label>
-  <label><span>CSS</span>
-    <input value="css" type="checkbox" name="course" >
-  </label> -->
+ 
+  <!-- <article class="user-card">
+    <img class="user-photo" src="./assets/img/Max-R_Headshot .jpg" alt="" class="avatar">
+    <div class="user-info">
+      <h2>random name</h2>
+      <div class="btn">
+        <button>allow</button>
+        <button>allow</button>
+      </div>
+    </div>
+  </article>
 
-    <div class="btn-block">
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit">
-    
-  </div>
-   <!-- поле для ввода сообщения -->
-  <textarea name=""  rows="3"></textarea>
-
-</fieldset>
-<!-- второй вариант кнопок -->
-<button type="submit"><img src="" alt="" srcset="">text</button>
-</form>
-
+ 
+  <article class="user-card">
+    <img class="user-photo" src="./assets/img/Max-R_Headshot .jpg" alt="" class="avatar">
+    <div class="user-info">
+      <h2>random name</h2>
+      <div class="btn">
+        <button>allow</button>
+        <button>allow</button>
+      </div>
+    </div>
+  </article> -->
+</section>
 </body>
 </html>

@@ -1,21 +1,31 @@
 body{
   background-color: burlywood;
 }
-form{
-  display: flex;
-  max-width: 300px;
-  min-height: 250px;
-  margin: auto;
-  flex-direction: column;
+.users-cards{
+display: flex;
+  /* min-width: 80vh; */
+  flex: row wrap;
   justify-content: space-around;
 }
-input:focus{
-  outline-color: blue;
-}
-label{
+.user-card{
   display: flex;
-  flex-direction: column;
+  min-width: 200px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+  background-color: azure;
+    
 }
-.btn-block{
-  text-align: center;
+.user-photo{
+  
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+  object-fit: cover;
+
+
+}
+.user-info{
+  margin: auto;
+  
+  
 }
