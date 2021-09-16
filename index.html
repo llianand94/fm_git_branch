@@ -19,19 +19,19 @@
     
     <form class="register-form" reaction="./file" method="get">
       <div class="name-wrapper">
-            <input  autofocus type="text" placeholder="first name" name="firstName">          
-            <input  type="text" placeholder="last name" name="lastName">          
+            <input  autofocus type="text" placeholder="first name" name="firstName" required>          
+            <input  type="text" placeholder="last name" name="lastName" required>          
       </div>
-      <input  type="email"    placeholder="email" name="">      
-      <input  type="password" placeholder="password" name="pass">
-      <input  type="password" placeholder="confirm password" name="passConf">
+      <input  type="email"    placeholder="email" name="email" required>      
+      <input  type="password" placeholder="password" name="pass" required>
+      <input  type="password" placeholder="confirm password" name="passConf" required>
       
       <label class="accept">
         <input  type="checkbox"  name="accept" required> I accept the 
         <a class="capitalize" href="">terms of use</a> & 
         <a class="capitalize" href="">privacy policy</a> 
       </label>
-      <button class="btn" type="submit"><p class="btn capitalize white text-owerflow">register now Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur placeat vero perspiciatis laudantium et modi porro ratione laboriosam? Dolorem, saepe.</p></button>
+      <button class="btn" type="submit"><p class="btn capitalize white text-owerflow">register now</p></button>
     </form>
 
   </section>
